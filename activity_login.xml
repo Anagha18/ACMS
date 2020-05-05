@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_im"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3fff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/icon_2"
+            android:padding="30dp"
+            />
+
+        <EditText
+            android:id="@+id/idname"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:hint="Username"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFBF8" />
+
+        <EditText
+            android:id="@+id/idpassword"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColorHint="#FFFBF8" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Keep me signed in"
+            android:textColor="#FFFBF8"
+            android:hint="#FFFBF8"
+            android:layout_gravity="left"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="#FFFBF8"
+            />
+
+        <Button
+            android:id="@+id/idloginbutton"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_col"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#FFFBF8" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#3fff"
+            android:layout_marginTop="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFFBF8" />
+    </LinearLayout>
+</LinearLayout>
