@@ -1,0 +1,2 @@
+rootProject.name='My_Prod_Exp'
+include ':app'

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">My_Prod_Exp</string>
+
+    <!--    Dashboard Strings    -->
+    <string name="Name">App Name</string>
+    <string name="Tag_line">Suitable tagline!</string>
+    <string name="Search">Search</string>
+    <string name="feature1">Feature</string>
+    <string name="Expiry">GENTLE REMINDER</string>
+    <string name="Expiry_Description">All the items that will expire within a week</string>
+    <string name="Category">CATEGORIES</string>
+    <string name="View">View all</string>
+
+</resources>

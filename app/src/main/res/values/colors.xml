@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#EF1808</color>
+    <color name="Background">#12E4DF</color>
+
+    <!--    Dashboard Colors     -->
+    <color name="Dash_bg">#F2F5F8</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Reminder_bg">#56F1E9CE</color>
+  <!--  <color name="Reminder">#FFEDBC</color>-->
+    <color name="Reminder">#F1E9CE</color>
+
+    <color name="option">#2C3E50</color>
+    <color name="option1">#D4CBE5</color>
+    <color name="option2">#7ADCCF</color>
+    <color name="option3">#F7C59F</color>
+    <color name="option4">#B8D7F5</color>
+
+    <color name="cat1">#FFDDE1</color>
+
+</resources>
