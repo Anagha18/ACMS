@@ -4,11 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 
 import com.example.take1.Dashboard_Remlist;
 import com.example.take1.Reminder;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -20,11 +24,27 @@ public class Dashboard extends AppCompatActivity {
     RecyclerView CategoryList;
     RecyclerView.Adapter adapter1;
 
+    Button btnLogout;
+    FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_dashboard);
+
+        btnLogout=findViewById(R.id.logout);
+
+        btnLogout.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                FirebaseAuth.getInstance().signOut();
+                Intent intToMain=new Intent(Dashboard.this, login.class);
+                startActivity(intToMain);
+
+            }
+        });
 
         ReminderList=findViewById(R.id.reminder_list);
         ReminderList();
