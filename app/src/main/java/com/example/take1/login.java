@@ -80,7 +80,7 @@ public class login extends AppCompatActivity {
                             }
                             else
                             {
-                                Intent intToHome = new Intent(login.this, HomeActivity.class);
+                                Intent intToHome = new Intent(login.this, Dashboard.class);
                                 startActivity(intToHome);
                             }
                         }

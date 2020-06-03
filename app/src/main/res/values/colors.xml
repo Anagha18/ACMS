@@ -2,5 +2,13 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#EF1808</color>
+    <color name="Background">#12E4DF</color>
+
+    <!--    Dashboard Colors     -->
+    <color name="Dash_bg">#F2F5F8</color>
+    <color name="White">#FFFFFF</color>
+    <color name="Reminder_bg">#56F1E9CE</color>
+    <color name="Reminder">#F1E9CE</color>
+    <color name="option">#2C3E50</color>
 </resources>
