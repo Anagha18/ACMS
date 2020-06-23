@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".Activity_1"></activity>
+        <activity android:name=".Activity_2" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/font" />

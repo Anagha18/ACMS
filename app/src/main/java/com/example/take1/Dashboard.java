@@ -27,32 +27,32 @@ public class Dashboard extends AppCompatActivity {
     Button btnLogout;
     FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
-
+    private Button btnFood;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_dashboard);
 
-        btnLogout=findViewById(R.id.logout);
+        btnLogout = findViewById(R.id.logout);
 
-        btnLogout.setOnClickListener(new View.OnClickListener(){
+        btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
+            public void onClick(View v) {
                 FirebaseAuth.getInstance().signOut();
-                Intent intToMain=new Intent(Dashboard.this, login.class);
+                Intent intToMain = new Intent(Dashboard.this, login.class);
                 startActivity(intToMain);
 
             }
         });
 
-        ReminderList=findViewById(R.id.reminder_list);
+        ReminderList = findViewById(R.id.reminder_list);
         ReminderList();
 
-        CategoryList=findViewById(R.id.category_list);
+        CategoryList = findViewById(R.id.category_list);
         CategoryList();
-    }
 
+    }
     private void CategoryList() {
         CategoryList.setHasFixedSize(true);
         CategoryList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
